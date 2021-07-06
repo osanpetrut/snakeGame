@@ -6,7 +6,7 @@ import java.awt.*;
 import java.awt.event.*;
 
 public class Graphics extends JPanel implements ActionListener {
-    private Timer timer = new Timer(100, this);
+    private Timer timer = new Timer(50, this);
     public String state;
     private Snake snake;
     private Food food;
@@ -35,9 +35,9 @@ public class Graphics extends JPanel implements ActionListener {
             g2d.setColor(Color.white);
             g2d.drawString("Pres any key", Game.width / 2 * Game.dimension - 40, Game.height / 2 * Game.dimension - 20);
         } else if (state == "RUNNING") {
-            g2d.setColor(Color.red);
+            g2d.setColor(Color.yellow);
             g2d.fillRect(food.getX() * Game.dimension, food.getY() * Game.dimension, Game.dimension, Game.dimension);
-            g2d.setColor(Color.GREEN);
+            g2d.setColor(Color.CYAN);
             for (Rectangle r : snake.getBody()) {
                 g2d.fill(r);
             }

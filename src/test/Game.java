@@ -13,8 +13,8 @@ public class Game
     private Graphics graphics;
     private JFrame window;
 
-    public static final int width = 30;
-    public static final int height = 30;
+    public static final int width = 50;
+    public static final int height = 50;
     public static final int dimension = 20;
 
     public Game() {
